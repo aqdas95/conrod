@@ -1,0 +1,54 @@
+<ion-content>
+    <ion-navbar>
+        <ion-title>{{'commando.title'|translate}}</ion-title>
+    </ion-navbar>
+
+    <h2 style="text-align: center;">Top-up user ready credit</h2>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>ReadyTV user telephone number</ion-label>
+        <ion-input type="tel" [(ngModel)]="rTVtelNum"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>ReadyTV unique account number</ion-label>
+        <ion-input type="tel" [(ngModel)]="rTVaccountNum"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>Ready credit PIN (16 Digits)</ion-label>
+        <ion-input type="tel" [(ngModel)]="readyPin"></ion-input>
+    </ion-item>
+
+    <div class="radioDiv" center>
+        <label class="radioLabel" style="width:100%">Digital box (per user acc #1-4)</label>
+    </div>
+
+    <div class="radiobtn" center>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#1" checked> #1<br>
+        </div>
+        <label class="spaceLabel">|</label>
+        
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#2"> #2<br>
+        </div>
+        <label class="spaceLabel">|</label>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#3"> #3<br>
+        </div>
+        <label class="spaceLabel">|</label>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#4"> #4<br>
+        </div>
+
+    </div>
+
+    <button ion-button round style="width: 90%; margin-top:10% ; margin-left: 5%; background:#d064f4; font-size: 15px" (click)="registerSubmit()">
+        Submit
+    </button>
+
+</ion-content>

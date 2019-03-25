@@ -1,0 +1,28 @@
+page-register-user {
+    .label {
+        font-size: 15px;
+    }
+    .radioDiv {
+        background: #f8e8ff;
+        text-align: center !important;
+        padding: 3%;
+        margin-top: 10%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    .radioLabel {
+        font-size: 15px;
+    }
+    .radiobtn {
+        margin-top: 3%;
+        text-align: center;
+    }
+    .subRadio {
+        display: inline-block;
+        width: 7%;
+        text-align: center;
+        margin: 0 8px 15px 8px;
+    }
+    .spaceLabel {
+        font-size: 24px;
+    }
+}

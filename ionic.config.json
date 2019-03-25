@@ -1,5 +1,7 @@
 {
   "name": "new-conrod",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

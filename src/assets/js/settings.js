@@ -1,0 +1,14 @@
+var wordpress_url = "https://test03.readytv.com";
+var wordpress_per_page = 10;
+var request_timeout = 30000;
+var open_target_blank = true;
+var display_mode = 'ltr';
+var date_format = "d MMM y HH:mm";
+var onesignal_app_id = "241f6b48-129a-499b-94e6-de452bd42454";
+var google_web_api_key = "486944611348-ubf0mlrhtabosimclvohndc6r39qfo0g.apps.googleusercontent.com";
+var application_language = "language";
+var google_analytics = "UA-115578608-1";
+var admob_android_banner = '';
+var admob_android_interstitial = '';
+var admob_ios_banner = '';
+var admob_ios_interstitial = '';

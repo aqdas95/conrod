@@ -1,0 +1,59 @@
+<ion-content>
+    <ion-navbar>
+        <ion-title>{{'commando.title'|translate}}</ion-title>
+    </ion-navbar>
+
+    <h2 style="text-align: center;">Register new account</h2>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>First Name</ion-label>
+        <ion-input type="text" [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>Last Name</ion-label>
+        <ion-input type="text" [(ngModel)]="lastName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>Telephone Number</ion-label>
+        <ion-input type="tel" [(ngModel)]="telNum"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label style="color:gray" floating>Digital box ID (On the back of the box)</ion-label>
+        <ion-input type="text" [(ngModel)]="digitalBoxID"></ion-input>
+    </ion-item>
+
+    <div class="radioDiv" center>
+        <label class="radioLabel" style="width:100%">Digital box (per user acc #1-4)</label>
+    </div>
+
+    <div class="radiobtn" center>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#1" checked> #1<br>
+        </div>
+        <label class="spaceLabel">|</label>
+        
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#2"> #2<br>
+        </div>
+        <label class="spaceLabel">|</label>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#3"> #3<br>
+        </div>
+        <label class="spaceLabel">|</label>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="digitalBox" name="discountradio" value="#4"> #4<br>
+        </div>
+
+    </div>
+
+    <button ion-button round style="width: 90%; margin-top:10% ; margin-left: 5%; background:#d064f4; font-size: 15px" (click)="registerSubmit()">
+        Submit
+    </button>
+
+</ion-content>

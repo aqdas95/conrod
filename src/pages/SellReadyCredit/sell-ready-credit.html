@@ -1,0 +1,47 @@
+<ion-content>
+    <ion-navbar>
+        <ion-title>{{'commando.title'|translate}}</ion-title>
+    </ion-navbar>
+
+    <h2 style="text-align: center;">Sell ready credit</h2>
+
+    <ion-label style="color:gray; margin-top: 10% ;margin-left: 5%">Ready credit PIN (16 Digits)</ion-label> <br>
+    <input type="text" style="margin-left: 10%; margin-right: 10%; width: 80%" name="readyPin" value="{{new_pin}}" readonly placeholder="Generated PIN comes here"><br>
+
+    <div class="radioDiv" center>
+        <label class="radioLabel" style="width:100%">Amount</label>
+    </div>
+
+    <div class="radiobtn" center>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="amount" name="discountradio" value="100" checked> $100<br>
+        </div>
+        
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="amount" name="discountradio" value="200"> $200<br>
+        </div>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="amount" name="discountradio" value="500"> $500<br>
+        </div>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="amount" name="discountradio" value="1000"> $1000<br>
+        </div>
+
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="amount" name="discountradio" value="2000"> $2000<br>
+        </div>
+        
+        <div class="subRadio">
+            <input type="radio" [(ngModel)]="amount" name="discountradio" value="5000"> $5000<br>
+        </div>
+
+    </div>
+
+    <button ion-button round style="width: 90%; margin-top:10% ; margin-left: 5%; background:#d064f4; font-size: 15px" (click)="generatePIN()">
+        Generate PIN
+    </button>
+
+</ion-content>
